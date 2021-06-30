@@ -1,0 +1,282 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+:root{
+    --bg-main-color:linear-gradient(101.04deg, #240E70 0%, #180529 100%);
+    --bg-secondary-color:linear-gradient(101.04deg, #DF3457 0%, #8D0621 100%);
+    --bg-third-color:linear-gradient(179.7deg, #E1BD81 0.26%, rgba(225, 189, 129, 0) 99.74%);
+    --text-main-color:#BB1C3C;
+    --text-secondary-color:#E1BD81;
+
+
+}
+
+body{
+  font-family: 'Original Surfer', cursive;
+  background-image: var(--bg-main-color);
+}
+
+.navbar-container{
+
+  background: transparent;
+  background-color:rgba(0,0,0,0.4);
+  padding: 10px 0 10px 0;
+  position:sticky;
+  top:0;
+
+
+}
+.navbar{
+
+  list-style: none;
+  justify-content:flex-end;
+  max-width:1300px;
+
+
+
+}
+.navbar > li{
+  margin-left: 40px;
+  list-style: none;
+}
+
+.navbar > li > a{
+  text-decoration: none;
+  color:var(--text-secondary-color);
+  /* font-weight: bold; */
+  font-size: 20px;
+
+}
+
+.navbar > li:hover{
+transform:scale(1.3);
+transition: ease-in-out 0.3s;
+
+}
+
+
+/* welcome section */
+
+#welcome-section{
+  height:100vh;
+  background-image:var(--bg-main-color);
+  color:var(--text-main-color);
+  border:15px solid var(--text-secondary-color);
+  border-width: 10px 0 10px 0;
+
+
+}
+
+
+.chinese-text{
+  width:150px;
+  font-size:75px;
+  position:relative;
+  left:190px;
+  top:220px;
+}
+.chinese-text{
+  font-family: 'Ma Shan Zheng', cursive;
+
+}
+
+#main-img{
+  width:30%;
+  position:relative;
+  left:50%;
+}
+
+
+/* project section */
+
+#projects{
+  height: 70vh;
+  background-image:var(--bg-secondary-color);
+  color: var(--text-secondary-color);
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.project-tile{
+  height: 50%;
+  width: 50%;
+  border-radius: 15px;
+  background-image:var(--bg-third-color);
+  margin: 20px 0 20px 0;
+  justify-content: center;
+    z-index:2;
+
+}
+.project-tile>a{
+  text-decoration: none;
+  color:white;
+
+}
+.sec-header{
+  margin:20px 0 20px 0;
+  font-size:65px;
+  letter-spacing: 0.09em;}
+
+.thumbnail{
+  margin: 20px 20px 20px 20px;
+
+  background-image:var(--bg-secondary-color);
+  height:100px;
+  width:100px;
+  border-radius: 25px;
+}
+.pro-img{
+width:100%;
+height:100%;
+}
+.thumbnail > p{
+  text-align: center;
+}
+
+.thumbnail:hover {
+transform:scale(1.1);
+transition: ease-in-out 0.3s;
+
+}
+
+
+.decoration{
+  height: 80%;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  margin-left: 0px;
+  z-index: 1;
+
+
+
+}
+.decoration > img {
+  height: 50%;
+  width: 100%;
+  margin-left:0px;
+}
+#mountain{
+  position: relative;
+  left:-127px;
+  height: 100%;
+  bottom:50%;
+}
+#samurai{
+  position: relative;
+  left:-127px;
+}
+
+
+/* footer */
+.footer{
+background-image:var(--bg-secondary-color);
+border:15px solid var(--text-secondary-color);
+border-width: 10px 0 10px 0;
+height:80px;
+color:var(--text-secondary-color);
+font-size:15px;
+
+}
+
+.container{
+  max-width: 1300px;
+  margin:auto;
+  justify-content:space-between;
+
+  margin-top:20px;
+  margin-bottom:20px;
+  z-index:999;
+}
+
+
+.icons{
+  color:var(--text-secondary-color);
+  font-size:30px;
+  margin-left:15px;
+  z-index:999;
+}
+
+.icons:hover{
+  transform:scale(1.2);
+  transition: ease-in-out 0.3s;
+
+}
+
+
+#depth{
+  height: 100px;
+}
+/* utilities */
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display:grid;}
+
+
+
+
+  /* respnsive */
+
+  @media (max-device-width: 768px)
+  {
+
+    #main-img{
+      left:30%;
+      top:-15%;
+    }
+
+    #welcome-section{
+      height:50vh;
+    }
+
+    .project-tile{
+      width:60%;
+    }
+
+    #projects{
+      height:25vh;
+    }
+
+    .decoration{
+      height: 80%;
+      width: 100%;
+      position: relative;
+      bottom: 0px;
+      margin-left: 0px;
+      z-index: 1;
+
+
+
+    }
+    .decoration > img {
+      height: 40%;
+      width: 100%;
+      margin-left:0px;
+      bottom:-10%;
+    }
+    #mountain{
+      position: relative;
+      /* left:-127px; */
+      height: 70%;
+      bottom:15%;
+    }
+    #samurai{
+      position: relative;
+      left:-180px;
+    }
+    #tiger{
+      position: relative;
+      left:-180px;
+    }
+    #depth{
+      height:8vh;
+    }
+  }

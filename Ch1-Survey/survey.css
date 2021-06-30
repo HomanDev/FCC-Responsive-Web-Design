@@ -1,0 +1,286 @@
+
+body{
+height:100vh;
+background-image:linear-gradient(to bottom, #47014E 30%, #630485 60%);
+color:white;
+font-family:Arial;
+overflow:hidden;
+
+}
+
+
+
+
+.vl {
+  border-left: 2px solid rgb(75, 26, 82);
+  height: 30vh;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(9px);
+}
+
+img{
+  width:50px;
+  height:80px;
+}
+
+
+.form-title{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+}
+
+hr{
+  height:2px;
+  border:none;
+  background-color: rgb(75, 26, 82);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(9px);
+
+}
+
+#description{
+  font-size:15px;
+  font-weight:lighter4
+}
+
+.flex-container{
+
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+  margin:auto;
+
+}
+
+.left-side{
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+margin:px;
+row-gap:5-px;
+width:30%;
+
+
+
+}
+.right-side{
+  display:flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  /* width:10vw; */
+  padding:0 0 0 0;
+  width:30%;
+
+
+}
+
+
+.flex-row{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  gap:2px;
+  flex-gap:space;
+}
+
+
+/* .label-input input, select{
+  margin-left: 10px;
+  border:2px solid white;
+
+} */
+
+/* input{
+  border: 3px solid #6E168E;
+  border-radius: 50px;
+  background-color: #C4C4C4;
+  margin-left:8px;
+
+} */
+/* input[type="text"], input[type="email"]{
+height:2vh;
+margin-left: 20px; */
+
+/* } */
+/* input[type="number"]{
+  width:150px; */
+
+/* } */
+
+/* } */
+
+/*
+#dropdown{
+  border: 3px solid #6E168E;
+  border-radius: 50px;
+  background-color: #C4C4C4;
+  width:40%;
+  margin-left:8px;
+
+} */
+
+.label-input{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+
+}
+.label-input input,  select{
+
+  align-content: flex-end;
+  border:2px solid #6E168E;
+  width:50%;
+  border-radius: 50px;
+  background-color:#C4C4C4;
+}
+
+select{width:55%}
+
+
+#o1,#o2,#o3,#r1,#r2,#r3{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #6E168E;
+      background-color:#C4C4C4;
+
+
+
+}
+
+#o1:checked,#o2:checked,#o3:checked,#r1:checked,#r2:checked,#r3:checked{
+  border: 7px solid #6E168E}
+
+
+
+#submit{
+position:absolute;
+right:20px;
+height: 45px;
+width:180px;
+
+background-image:radial-gradient(farthest-corner at 450px 0px, #00FFA3 25%,  #008870 100%);
+border: none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+color:white;
+font-size:30px;
+
+/* background-image: conic-gradient(from 100deg at 50% 0%, #00FFA3 0deg, #008870 273.26deg, #00FFA3 360deg); */
+
+
+}
+/* .vl {
+  position:relative;
+  border-left: 2px solid rgb(75, 26, 82);
+  height: 500px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+
+
+textarea{
+  width:20vw;
+  height:8vh;
+  border: 3px solid #6E168E;
+  border-radius: 4px;
+  background-color: #C4C4C4;
+  resize: none;
+
+
+}
+
+
+.form-card{
+
+position: relative;
+margin:auto;
+top:5%;
+
+width:50vw;
+height:80vh ;
+border-radius:30px;
+padding:10px 20px 10px 20px;
+
+background: rgba(38, 2, 66, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(9px);
+transition: 0.5s all linear;
+
+/* overflow:scroll; */
+}
+
+
+
+
+@media only screen and (max-width:1000px){
+  .left-side{width:100%;}
+
+  .right-side{width:100%;}
+  .vl{
+    border: none;
+    border-bottom: 2px solid rgb(75, 26, 82);
+    width: 100%;
+    height:0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(9px);
+  }
+  textarea{
+    width:100%;
+  }
+}
+
+@keyframes move{
+
+  100% {transform:rotate(360deg);}
+
+
+}
+#d1{
+  position:absolute;
+  left:-40%;
+  top:-60%;
+  height:150vh;
+  width:100vw;
+  z-index:-3;
+  animation: move 10s linear infinite; }
+
+
+#d2{
+  position:absolute;
+  right:-40%;
+  bottom:-60%;
+  height:150vh;
+  width:100vw;
+  z-index:-3;
+  animation: move 10s linear infinite;
+  /* transform:rotate(); */
+}
+
+
+#d3{
+  position:absolute;
+  right:-10%;
+  bottom:-40%;
+  height:100vh;
+  width:80vw;
+  z-index:-2;
+  animation: move 10s linear infinite;
+  /* transform:rotate(); */
+}
+
+#label-input{
+  gap:50px;
+  background-color:white;
+}

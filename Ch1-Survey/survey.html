@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Challenge Form!</title>
+    <link rel="stylesheet" href="survey.css">
+
+  </head>
+  <body>
+
+
+
+<div class="form-card">
+
+
+
+
+<div class="form-heading">
+  <div class="form-title">
+<img src="survey-icon.svg">
+<h1 id='title'>Survey</h1>
+
+
+</div>
+<hr>
+
+  <p id='description'>lorem lorem lorem</p>
+
+</div>
+
+
+
+
+
+<form id='survey-form' action="#" method="post">
+<div class="flex-container">
+
+
+
+<div class="left-side">
+  <div class="label-input">
+    <label id="name-label" for="name-label">Name</label>
+    <input type="text" id="name" name="name-label" placeholder='John Doe' required>
+  </div>
+
+  <div class="label-input">
+
+  <label id="email-label" for="email-label">Email</label>
+  <input type="email" id="email" name="email-label" placeholder='example@example.com' required>
+</div>
+  <div class="label-input">
+  <label id="number-label" for="number-label">Number</label>
+  <input type="number" id="number" placeholder="0-100" name="number-label" required min="0" max="100">
+</div>
+
+
+  <div class="label-input">
+  <label for="dropdown">Choose</label>
+
+
+
+  <select class='Select-tag' id="dropdown" name="dropdown">
+    <option value="0">Hi</option>
+    <option value="1">Bye</option>
+  </select>
+
+  </div>
+
+</div>
+
+<div class="vl"></div>
+<div class="right-side">
+  <label for="radio_option">Choose One</label>
+
+<div class="flex-row">
+  <label for="o1">Netflix</label>
+  <input type="radio" name="radio_option" id="o1" value="0">
+  <label for="o2">Hulu</label>
+  <input type="radio" name="radio_option" id="o2" value="1">
+  <label for="o3">Amazon</label>
+  <input type="radio" name="radio_option" id="o3" value="2">
+</div>
+
+<label>Choose Multiple</label>
+<div class="flex-row">
+
+<label for="checkbox1">Sport</label>
+<input type="checkbox" id='r1' name="checkbox1" value="0">
+<label for="checkbox2">Reading</label>
+<input type="checkbox" id="r2" name="checkbox2" value="1">
+<label for="checkbox3">Boxing</label>
+<input type="checkbox" id='r3' name="checkbox3" value="2">
+</div>
+<label for="comments">Additional Comments</label>
+<textarea name="comments" rows="8" cols="80" placeholder='Comment..'></textarea>
+
+</div>
+
+</div>
+
+<hr>
+<input type="submit" id="submit" value="Submit">
+</form>
+
+
+
+
+
+</div>
+
+
+  </body>
+  <img src="ellipse4.svg" id='d1'>
+  <img src="ellipse4.svg" id='d2'>
+  <img src="ellipse4.svg" id='d3'>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+</html>

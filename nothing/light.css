@@ -1,0 +1,81 @@
+/* body{
+  height: 100%;
+  width: 100%;
+  background-color:#ecf0f3;
+}
+
+
+.card{
+
+  width: 350px;
+  height: 500px;
+  padding:40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color:#ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1,
+  -14px -14px 20px white;
+  margin:auto;
+
+}
+
+.img-div{
+  margin:auto;
+  box-sizing: border-box;
+  background-color:#ecf0f3;
+  box-shadow: 7px 7px 10px #cbced1,
+-7px -7px 10px white;
+  width:100px;
+  height:100px;
+  border-radius: 50px;
+
+
+
+}
+
+
+img{
+  display: block;
+  margin: 0 auto;
+  padding-top: 25px;
+  width:60px;
+  height:50px;
+
+
+} */
+
+
+
+
+
+.ball{
+position: absolute;
+top:50%;
+left:50%;
+ width: 200px;
+ height: 200px;
+ border-radius: 100px;
+ background-image: linear-gradient(45deg, pink, aqua);
+animation-duration: 1s;
+ animation-name: jump;
+animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+}
+
+
+@keyframes jump{
+  0% {
+    top:50%;
+     height: 200px;
+  }
+  /* 50% {top:20%;
+   height: 150px;} */
+
+   100% {top:25%;
+    height: 170px;
+    }
+
+    }
+}

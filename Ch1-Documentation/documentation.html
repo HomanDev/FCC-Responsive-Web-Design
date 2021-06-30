@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Documentation Project</title>
+    <link rel="stylesheet" href="documentation.css">
+  </head>
+  <header>
+
+    <img class="mob-friendly" id="top"src="Intersect.svg" alt="">
+    <img class="mob-friendly" id="bg-img1"src="Saly.svg" alt="">
+    <img class="mob-friendly" id="bg-img2"src="Saly2.svg" alt="">
+    <img class="mob-friendly" id="bg-img3"src="Saly3.svg" alt="">
+    <img class="mob-friendly" id="bg-img4"src="Saly4.svg" alt="">
+    <img class="mob-friendly" id="bg-img5"src="Saly5.svg" alt="">
+    <img id="bg-img6"src="Saly6.svg" alt="">
+    <img class="mob-friendly" id="bg-img7"src="Saly7.svg" alt="">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
+  <body>
+    <div class="container">
+
+
+    <nav id='navbar' class="card head-nav">
+      <header class='nav-header'>Basics Of JavaScript</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_is_JavaScript">What is JavaScript</a></li>
+          <li><a class="nav-link" href="#Variables">Variables</a></li>
+          <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+          <li><a class="nav-link" href="#Functions">Functions</a></li>
+          <li><a class="nav-link" href="#More">More</a></li>
+
+        </ul>
+      </nav>
+
+      <main class="card" id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header class="article-h">Introduction</header>
+          <p>JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms;
+             with dynamic styling; with animation, etc. This article helps you get started with JavaScript and furthers your understanding of what is possible.</p>
+        </section>
+        <section class="main-section" id="What_is_JavaScript">
+          <header class="article-h">What is JavaScript</header>
+          <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website.
+             It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+             <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+             <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:</p>
+             <ul>
+               <li>Browser Application Programming Interfaces (APIs) built into web browsers,
+                 providing functionality such as dynamically creating HTML and setting CSS styles;
+                  collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+                  <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+                  <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+                  <li>Filler because the article doesnt have enough bullet points! Sorry.</li>
+                  <li>Filler because the article doesnt have enough bullet points! Sorry.</li>
+             </ul>
+        </section>
+        <section class="main-section" id="Variables">
+          <header class="article-h">Variables</header>
+          <p>Variables are containers that store values. You start by declaring a variable with the <span class="highlight">var</span> (less recommended, dive deeper for the explanation) or the <span class="highlight">let</span> keyword, followed by the name you give to the variable:</p>
+          <code>let myVariable;</code>
+          <p class="note"><span>Note:</span>  A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons.</p>
+          <p class="note"><span>Note:</span> JavaScript is case sensitive. This means myVariable is not the same as myvariable. If you have problems in your code, check the case!</p>
+          <p>After declaring a variable, you can give it a value:</p>
+          <code>myVariable = 'Bob';</code>
+          <p>Also, you can do both these operations on the same line:</p>
+          <code>let myVariable = 'Bob';</code>
+          <p>You retrieve the value by calling the variable name:</p>
+          <code>myVariable;</code>
+          <p>After assigning a value to a variable, you can change it later in the code:</p>
+            <code>let myVariable = 'Bob'; <br> myVariable = 'Steve';</code>
+        </section>
+        <section class="main-section" id="Conditionals">
+          <header class="article-h">Conditionals</header>
+          <p>Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the <span class="hilight">if ... else</span> statement. For example:</p>
+          <code>let iceCream = 'chocolate'; <br>
+            if(iceCream === 'chocolate') { <br>
+                alert('Yay, I love chocolate ice cream!'); <br>
+              } else { <br>
+                  alert('Awwww, but chocolate is my favorite...');
+                <br>}</code>
+
+                <p>The expression inside the <span class="hilight"> if( ... )</span> is the test. This uses the identity operator (as described above) to compare the variable <span class="hilight">iceCream</span>  with the string <span class="hilight">chocolate</span> to see if the two are equal. If this comparison returns <span class="hilight">true</span>, the first block of code runs. If the comparison is not true, the second block of code—after the <span class="hilight">else</span> statement—runs instead.</p>
+        </section>
+        <section class="main-section" id="Functions">
+          <header class="article-h">Functions</header>
+          <p>Functions are a way of packaging functionality that you wish to reuse. It's possible to define a body of code as a function that executes when you call the function name in your code. This is a good alternative to repeatedly writing the same code. You have already seen some uses of functions previously. For example:</p>
+          <code>let myVariable = document.querySelector('h1');</code>
+          <code>alert('hello!');</code>
+          <p>These functions, <span class="hilight">document.querySelector</span> and <span class="hilight">alert</span>, are built into the browser.</p>
+          <p>If you see something which looks like a variable name, but it's followed by parentheses— <span class="hilight">()</span> —it is likely a function. Functions often take arguments: bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.</p>
+          <p>For example, the <span class="hilight">alert()</span> function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what message to display.</p>
+          <p>You can also define your own functions. In the next example, we create a simple function which takes two numbers as arguments and multiplies them:</p>
+          <code>function multiply(num1,num2) { <br>
+                let result = num1 * num2; <br>
+                return result;<br>
+                }</code>
+                <p>Try running this in the console; then test with several arguments. For example:</p>
+                <code>multiply(4, 7); <br>
+                    multiply(20, 20); <br>
+                    multiply(0.5, 3);</code>
+                <p class="note"><span>Note:</span> The <span class="hilight">return</span> statement tells the browser to <span class="hilight">return</span> the result variable out of the function so it is available to use. This is necessary because variables defined inside functions are only available inside those functions. This is called variable scoping.</p>
+        </section>
+
+        <section class="main-section" id="More">
+          <header class="article-h">More</header>
+          <p>For more information and classes make sure to check</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#conditionals">MDN Web Docks, JavaScript basics.</a>
+        </section>
+      </main>
+
+    </div>
+
+
+  </body>
+</html>
